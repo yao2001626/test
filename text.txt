@@ -1,0 +1,81 @@
+ANTLR Parser Generator  Version 3.4
+line 97:5 mismatched character 'z' expecting '>'
+line 97:8 mismatched character 'Z' expecting '>'
+line 97:9 no viable alternative at character '_'
+line 97:14 mismatched character 'z' expecting '>'
+line 97:17 mismatched character 'Z' expecting '>'
+line 97:18 no viable alternative at character '_'
+error(100): ll\Lime2.g:97:20: syntax error: antlr: NoViableAltException(60@[722:4: ( ( id ( ASSIGN | PLUS_ASSIGN ) ( atom | block ) ) (sub= ebnfSuffix[root_0,false] )? | a= atom (sub2= ebnfSuffix[$a.tree,false] )? | ebnf | FORCED_ACTION | ACTION | p= SEMPRED ( IMPLIES )? | t3= tree_ )])
+error(100): ll\Lime2.g:97:20: syntax error: antlr: NoViableAltException(60@[722:4: ( ( id ( ASSIGN | PLUS_ASSIGN ) ( atom | block ) ) (sub= ebnfSuffix[root_0,false] )? | a= atom (sub2= ebnfSuffix[$a.tree,false] )? | ebnf | FORCED_ACTION | ACTION | p= SEMPRED ( IMPLIES )? | t3= tree_ )])
+line 97:21 mismatched character '9' expecting '>'
+error(100): ll\Lime2.g:101:11: syntax error: antlr: NoViableAltException(66@[])
+error(100): ll\Lime2.g:101:28: syntax error: antlr: NoViableAltException(78@[])
+error(100): ll\Lime2.g:101:28: syntax error: antlr: MissingTokenException(inserted [@-1,0:0='<missing RPAREN>',<69>,101:27] at ?)
+error(100): ll\Lime2.g:101:34: syntax error: antlr: NoViableAltException(69@[])
+error(100): ll\Lime2.g:101:39: syntax error: antlr: UnwantedTokenException(found=skip, expected 52)
+error(100): ll\Lime2.g:105:4: syntax error: antlr: NoViableAltException(66@[])
+error(100): ll\Lime2.g:109:4: syntax error: antlr: NoViableAltException(66@[])
+error(100): ll\Lime2.g:109:10: syntax error: antlr: NoViableAltException(64@[])
+error(100): ll\Lime2.g:109:10: syntax error: antlr: NoViableAltException(64@[])
+error(100): ll\Lime2.g:114:4: syntax error: antlr: NoViableAltException(66@[])
+line 97:5 mismatched character 'z' expecting '>'
+line 97:8 mismatched character 'Z' expecting '>'
+line 97:9 no viable alternative at character '_'
+line 97:14 mismatched character 'z' expecting '>'
+line 97:17 mismatched character 'Z' expecting '>'
+line 97:18 no viable alternative at character '_'
+error(100): ll\Lime2.g:97:20: syntax error: antlr: NoViableAltException(60@[722:4: ( ( id ( ASSIGN | PLUS_ASSIGN ) ( atom | block ) ) (sub= ebnfSuffix[root_0,false] )? | a= atom (sub2= ebnfSuffix[$a.tree,false] )? | ebnf | FORCED_ACTION | ACTION | p= SEMPRED ( IMPLIES )? | t3= tree_ )])
+error(100): ll\Lime2.g:97:20: syntax error: antlr: NoViableAltException(60@[722:4: ( ( id ( ASSIGN | PLUS_ASSIGN ) ( atom | block ) ) (sub= ebnfSuffix[root_0,false] )? | a= atom (sub2= ebnfSuffix[$a.tree,false] )? | ebnf | FORCED_ACTION | ACTION | p= SEMPRED ( IMPLIES )? | t3= tree_ )])
+line 97:21 mismatched character '9' expecting '>'
+error(100): ll\Lime2.g:101:11: syntax error: antlr: NoViableAltException(66@[])
+error(100): ll\Lime2.g:101:28: syntax error: antlr: NoViableAltException(78@[])
+error(100): ll\Lime2.g:101:28: syntax error: antlr: MissingTokenException(inserted [@-1,0:0='<missing RPAREN>',<69>,101:27] at ?)
+error(100): ll\Lime2.g:101:34: syntax error: antlr: NoViableAltException(69@[])
+error(100): ll\Lime2.g:101:39: syntax error: antlr: UnwantedTokenException(found=skip, expected 52)
+error(100): ll\Lime2.g:105:4: syntax error: antlr: NoViableAltException(66@[])
+error(100): ll\Lime2.g:109:4: syntax error: antlr: NoViableAltException(66@[])
+error(100): ll\Lime2.g:109:10: syntax error: antlr: NoViableAltException(64@[])
+error(100): ll\Lime2.g:109:10: syntax error: antlr: NoViableAltException(64@[])
+error(100): ll\Lime2.g:114:4: syntax error: antlr: NoViableAltException(66@[])
+error(100): ll\Lime2.g:0:1: syntax error: assign.types: MismatchedTreeNodeException(0!=29)
+error(100): ll\Lime2.g:97:20: syntax error: assign.types: NoViableAltException(29@[])
+error(100): ll\Lime2.g:0:1: syntax error: assign.types: MismatchedTreeNodeException(29!=28)
+error(100): ll\Lime2.g:0:1: syntax error: assign.types: MismatchedTreeNodeException(28!=29)
+error(10):  internal error: ll\Lime2.g : java.util.NoSuchElementException: can't look backwards more than one token in this stream
+org.antlr.runtime.misc.LookaheadStream.LB(LookaheadStream.java:159)
+org.antlr.runtime.misc.LookaheadStream.LT(LookaheadStream.java:120)
+org.antlr.runtime.RecognitionException.extractInformationFromTreeNodeStream(RecognitionException.java:144)
+org.antlr.runtime.RecognitionException.<init>(RecognitionException.java:111)
+org.antlr.runtime.MismatchedTreeNodeException.<init>(MismatchedTreeNodeException.java:42)
+org.antlr.runtime.tree.TreeParser.recoverFromMismatchedToken(TreeParser.java:135)
+org.antlr.runtime.BaseRecognizer.match(BaseRecognizer.java:115)
+org.antlr.grammar.v3.AssignTokenTypesWalker.ruleBody(AssignTokenTypesWalker.java:1977)
+org.antlr.grammar.v3.AssignTokenTypesWalker.rule(AssignTokenTypesWalker.java:1569)
+org.antlr.grammar.v3.AssignTokenTypesWalker.rules(AssignTokenTypesWalker.java:1505)
+org.antlr.grammar.v3.AssignTokenTypesWalker.grammarSpec(AssignTokenTypesWalker.java:713)
+org.antlr.grammar.v3.AssignTokenTypesWalker.grammar_(AssignTokenTypesWalker.java:383)
+org.antlr.tool.CompositeGrammar.assignTokenTypes(CompositeGrammar.java:337)
+org.antlr.Tool.process(Tool.java:462)
+org.antlr.mojo.antlr3.Antlr3Mojo.execute(Antlr3Mojo.java:378)
+org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:497)
+org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
