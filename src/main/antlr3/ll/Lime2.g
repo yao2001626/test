@@ -6,10 +6,10 @@ options{
 }
 
 r 
-  : calss_declaration+ EOF  
+  : class_declaration+ EOF  
   ;
 class_declaration
-  : Class Indetifier (attribute | initialization | method | action )* End 
+  : Class ID (attribute | initialization | method | action )* End 
   ;
 attribute
   : Attribute varList 
@@ -18,27 +18,49 @@ initialization
   : Initialization '(' varList? ')' statement
   ;
 method
-  : Method Identifier ('('varList ')')? (':' typeList)? (When expression Do)? statement
+  : Method ID ('('varList ')')? (':' typeList)? (When expression Do)? statement
   ;
 action
-  : Action (Identifier)? (When expression Do)? statement
+  : Action ID (When expression Do)? statement
   ;
-statement
+statement options {backtrack = true;}
   :compound_statement
   |assignment_expression
   |postfix_expression
   |Return expressionRoot  
-  |If expressionRoot Then s1=statement (Else s2=statement)? 
+  |If expressionRoot Then s1=statement Else s2=statement
   |While expressionRoot Do statement 
   ;
+
+compound_statement
+	: Begin statement (';' statement)* End
+	;
   
+varList
+	: idList ':' type (',' idList ':' type)*
+	;
+idList
+	: ID (',' ID)*
+	;
+typeList
+	: type (',' type)*
+	;
+
+type
+	: 'int'
+	| 'void'
+	;
+assignment_expression
+	: postfix_expression ('=' expressionRoot)?
+	;
+	
 expressionRoot
   : expression 
   ;
 expression 
   : conditional_expression 
   ;
-condtional_expression
+conditional_expression
   : relational_expression (('=='|'!=') relational_expression)?
   ;
 relational_expression
@@ -47,7 +69,7 @@ relational_expression
 additive_expression
   : postfix_expression (('+'|'-') postfix_expression)*
   ;
-postive_expression
+postfix_expression
   : primary_expression 
     (
       '('argument_expression_list ')' 
@@ -60,9 +82,8 @@ argument_expression_list
   ;
   
 primary_expression
-  : Identifier
-  |String
-  |Int
+  : ID
+  |INT
   |'('expression ')'
   ;
   
@@ -94,7 +115,7 @@ Bool
 	;
 
 ID
-	:	LETTER (LETTER|'0'..'9')*
+	:LETTER (LETTER|'0'..'9')*
 	;
 	
 fragment
